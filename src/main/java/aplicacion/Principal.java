@@ -1,12 +1,8 @@
 package aplicacion;
 import mates.Matematicas;
 public class Principal{
-    public void Principal(){
 
-
-        Matematicas.generarNumeroPi(1000000000);
-    }
     public static void main(String[] args){
-
+        System.out.println("El valor de PI es: " + Matematicas.generarNumeroPi(1000000000));
     }
 }
