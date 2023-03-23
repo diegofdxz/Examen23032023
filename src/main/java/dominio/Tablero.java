@@ -22,7 +22,10 @@ public class Tablero {
         /********************************************************
          * Lee el estado inicial de un fichero llamado ‘matriz‘.
          ********************************************************/
-
+        int N = 30;
+        public Tablero() {
+                this.estadoActual = new int[N][N]; // inicializa el estadoActual con un arreglo de 0's
+        }
 
         public void leerEstadoInicial() {
                 // La secuencia de ceros y unos del fichero es guardada
@@ -74,7 +77,7 @@ xx
                                         resultado += " ";
                                 }
                         }
-                        resultado += "";
+                        resultado += (Math.random() < 0.5) ? "x" : " ";
                 }
                 return resultado;
         }
